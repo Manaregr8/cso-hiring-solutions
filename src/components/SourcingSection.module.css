@@ -129,7 +129,7 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 2rem;
+  border-radius: 10px;
   container-type: inline-size;
 }
 
