@@ -110,7 +110,7 @@ export default function Hero() {
               Completely automated.
             </h2>
             <p className={styles.infoText}>
-              Wone manages your entire hiring process. Attract, source, qualify
+              CSO manages your entire hiring process. Attract, source, qualify
               and interview candidates automatically with contextual AI that
               understands your needs beyond tags and keywords and leaves you only
               with the best.
@@ -131,7 +131,7 @@ export default function Hero() {
           </h2>
           <p className={styles.infoText}>
             Save weeks on repetitive work. Just post a job description and let
-            Wone do the hard work. Take over only when the candidates have been
+            CSO do the hard work. Take over only when the candidates have been
             qualified, so you&apos;re not wasting time weeding out unqualified
             talent.
           </p>

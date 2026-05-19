@@ -37,7 +37,7 @@ export default function Navbar() {
             <circle cx="9" cy="9" r="8" fill="#0a0a0a" />
             <circle cx="21" cy="9" r="8" fill="#0a0a0a" fillOpacity="0.5" />
           </svg>
-          <span className={styles.brandName}>wone</span>
+          <span className={styles.brandName}>cso</span>
         </Link>
 
         {/* Desktop Nav Links */}
@@ -78,7 +78,7 @@ export default function Navbar() {
               <circle cx="9" cy="9" r="8" fill="#0a0a0a" />
               <circle cx="21" cy="9" r="8" fill="#0a0a0a" fillOpacity="0.5" />
             </svg>
-            <span className={styles.brandName}>wone</span>
+            <span className={styles.brandName}>cso</span>
           </Link>
         </div>
 
@@ -109,7 +109,7 @@ export default function Navbar() {
           </Link>
           <div className={styles.footerInfo}>
             <p>Ready to revolutionize your hiring?</p>
-            <span>wone.ai © {new Date().getFullYear()}</span>
+            <span>cso.ai © {new Date().getFullYear()}</span>
           </div>
         </div>
       </div>

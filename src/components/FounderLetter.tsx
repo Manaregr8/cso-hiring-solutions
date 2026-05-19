@@ -9,7 +9,7 @@ export default function FounderLetter() {
         </h2>
         
         <p className={styles.paragraph}>
-          The rise of AI has brought us to a crossroads in recruitment. Many are choosing to replace human judgment with automation. We've taken a different path at Wone. We believe deeply in the irreplaceable value of human connection in hiring.
+          The rise of AI has brought us to a crossroads in recruitment. Many are choosing to replace human judgment with automation. We've taken a different path at CSO. We believe deeply in the irreplaceable value of human connection in hiring.
         </p>
         
         <p className={styles.paragraph}>

@@ -15,7 +15,7 @@ export default function SourceSection() {
           {/* Left: text + CTA */}
           <div className={styles.left}>
             <p className={styles.para}>
-              All you need to start sourcing is a job description. Wone will
+              All you need to start sourcing is a job description. CSO will
               find and qualify talent within one minute so you don&apos;t have
               to sift through hundreds of resumes.
             </p>

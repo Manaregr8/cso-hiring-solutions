@@ -10,11 +10,11 @@ export default function ProcessSection() {
         <div className={styles.header}>
           <div className={styles.textContent}>
             <h2 className={styles.heading}>
-              Wone process is light years faster than<br />traditional tools and platforms.
+              CSO's process is light years faster than<br />traditional tools and platforms.
             </h2>
             <p className={styles.subheading}>
               Regular sourcing & evaluation are manual and take 30+ days per role.<br />
-              <span className={styles.highlight}>Wone sources and evaluates talent within one minute.</span>
+              <span className={styles.highlight}>CSO sources and evaluates talent within one minute.</span>
             </p>
           </div>
           <button className={styles.ctaButton}>
@@ -91,7 +91,7 @@ export default function ProcessSection() {
             />
           </div>
 
-          {/* Wone */}
+          {/* CSO */}
           <div className={styles.woneBarColumn}>
             <motion.div 
               className={styles.barHeader}
@@ -106,7 +106,7 @@ export default function ProcessSection() {
                   <rect x="0" y="0" width="14" height="10" rx="5" fill="#999" opacity="0.6"/>
                   <rect x="10" y="0" width="14" height="10" rx="5" fill="#999" opacity="0.6"/>
                 </svg>
-                <span style={{ fontWeight: 500 }}>wone</span>
+                <span style={{ fontWeight: 500 }}>cso</span>
               </div>
             </motion.div>
             <motion.div 

@@ -41,7 +41,7 @@ export default function EvaluationSection() {
         <div className={styles.textRow}>
           <div className={styles.textLeft}>
             <p className={styles.bodyText}>
-              Wone automatically parses and reviews candidate technical depth. By conducting{' '}
+              CSO automatically parses and reviews candidate technical depth. By conducting{' '}
               <span className={styles.highlight}>contextual screening chats</span> and deep profile analysis, our platform delivers an objective candidate scorecard.
             </p>
             <p className={styles.bodyText}>
@@ -94,7 +94,7 @@ export default function EvaluationSection() {
                       <circle cx="9" cy="9" r="8" fill="#0a0a0a" />
                       <circle cx="21" cy="9" r="8" fill="#0a0a0a" fillOpacity="0.4" />
                     </svg>
-                    <span className={styles.logoText}>wone</span>
+                    <span className={styles.logoText}>cso</span>
                   </div>
                   <div className={styles.navLinks}>
                     {['Openings', 'Interviews', 'Inbox', 'Contacts', 'Company'].map(l => (

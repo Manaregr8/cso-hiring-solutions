@@ -93,7 +93,7 @@ export default function TrackingSection() {
                       <circle cx="9" cy="9" r="8" fill="#0a0a0a" />
                       <circle cx="21" cy="9" r="8" fill="#0a0a0a" fillOpacity="0.4" />
                     </svg>
-                    <span className={styles.logoText}>wone</span>
+                    <span className={styles.logoText}>cso</span>
                   </div>
                   <div className={styles.navLinks}>
                     {['Openings', 'Interviews', 'Inbox', 'Contacts', 'Company'].map(l => (

@@ -8,7 +8,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "wone — Recruiting system that helps you hire better talent faster",
+  title: "cso — Recruiting system that helps you hire better talent faster",
   description: "Source and evaluate extraordinary talent, automatically. Cut weeks off your hiring process.",
 };
 

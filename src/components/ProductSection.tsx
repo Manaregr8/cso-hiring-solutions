@@ -6,7 +6,7 @@ export default function ProductSection() {
     <section className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.heading}>
-          Wone is the human-centered<br />product in the world of AI.
+          CSO is the human-centered<br />product in the world of AI.
         </h2>
         <p className={styles.subheading}>
           Pioneering the next evolution of recruitment.<br />
@@ -47,7 +47,7 @@ export default function ProductSection() {
         <div className={styles.imageWrapper}>
           <Image 
             src="/team.png" 
-            alt="Wone Team" 
+            alt="CSO Team" 
             fill
             className={styles.image}
             priority

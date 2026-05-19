@@ -29,7 +29,7 @@ export default function Footer() {
                 <rect x="0" y="0" width="14" height="10" rx="5" fill="#FFFFFF"/>
                 <rect x="10" y="0" width="14" height="10" rx="5" fill="#FFFFFF" opacity="0.8"/>
               </svg>
-              <span className={styles.logoText}>wone</span>
+              <span className={styles.logoText}>cso</span>
             </div>
             <p className={styles.brandDesc}>
               Your own, personal recruiter.<br />
