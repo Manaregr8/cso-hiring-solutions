@@ -1,0 +1,574 @@
+/* ─── Section wrapper ─── */
+.section {
+  background: #ffffff;
+  padding: 5rem 3.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ─── Label ─── */
+.label {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2a7a3b;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+}
+
+/* ─── Headline ─── */
+.headline {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+  color: #0a0a0a;
+  margin-bottom: 2.5rem;
+}
+
+/* ─── Two-column text row ─── */
+.textRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.textLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bodyText {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #3a3a3a;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #3b4fcf;
+  font-weight: 500;
+}
+
+.highlightGreen {
+  color: #2a7a3b;
+  font-weight: 600;
+}
+
+/* ─── Dark pill button ─── */
+.textRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.darkPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #0a0a0a;
+  color: #ffffff;
+  padding: 1.1rem 1.1rem 1.1rem 1.6rem;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+  min-width: 300px;
+}
+
+.darkPill:hover {
+  opacity: 0.85;
+}
+
+.pillContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.pillTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.pillSub {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1;
+}
+
+.pillArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════
+   MOCKUP — scale-wrapper + canvas technique
+   Canvas is authored at 1600 × 1000 (16:10).
+   The wrapper holds the aspect ratio; the canvas
+   is positioned absolute and scaled to fit.
+═══════════════════════════════════════════════ */
+
+.mockupScaleWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 2rem;
+  container-type: inline-size;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mockupCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 1000px;
+  transform-origin: top left;
+  transform: scale(calc(100cqw / 1600));
+}
+
+/* ─── Gradient background ─── */
+.mockupBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    #a8d4b4 0%,
+    #a8b8e0 40%,
+    #c0d4a8 70%,
+    #88c8a8 100%
+  );
+  z-index: 0;
+}
+
+/* ─── Browser shell ─── */
+.browser {
+  position: relative;
+  z-index: 1;
+  margin: 32px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.browserBar {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px 20px;
+}
+
+.browserNav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.logoText {
+  font-weight: 800;
+  font-size: 14px;
+  color: #0a0a0a;
+}
+
+.navLinks {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.navLink {
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.workspace {
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #c8b0a0;
+}
+
+/* ─── Browser content ─── */
+.browserContent {
+  padding: 32px 40px;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.jobTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0a0a0a;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.jobMeta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.metaTag {
+  font-size: 13px;
+  color: #555;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metaIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #888;
+}
+
+/* ─── Tabs ─── */
+.tabs {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 24px;
+}
+
+.tab {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tabActive {
+  color: #0a0a0a;
+  font-weight: 600;
+  border-bottom-color: #0a0a0a;
+}
+
+.tabActions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.tabBtn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ─── Scorecard Specific Styles ─── */
+.sectionLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 16px;
+}
+
+.scorecardContainer {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  border-top: 1px solid #f0f0f0;
+  padding: 24px 0 10px;
+}
+
+/* Left Profile Column */
+.profileLeft {
+  display: flex;
+  gap: 20px;
+}
+
+.profileAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 2px;
+}
+
+.profileRole {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.profileTags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.tagGreen {
+  font-size: 11px;
+  color: #2a7a3b;
+  background: #e8f5ec;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tagBlue {
+  font-size: 11px;
+  color: #1a4fbf;
+  background: #e8eefa;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tagIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profileDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.evalNotes {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5;
+  background: #fdfdfb;
+  border: 1px solid #f0efe8;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.evalNotes span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+  color: #2a7a3b;
+}
+
+/* Right Metrics Column */
+.profileRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 1px solid #f0f0f0;
+  padding-left: 32px;
+}
+
+.metricsTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.scoreList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scoreItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.scoreLabelRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+}
+
+.progressBarBg {
+  width: 100%;
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background: #2a7a3b;
+  border-radius: 10px;
+}
+
+.skillsTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+
+.skillItem {
+  font-size: 12px;
+  color: #555;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skillCheck {
+  color: #2a7a3b;
+  font-weight: 700;
+}
+
+.rightActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.actionBtn {
+  padding: 8px 16px;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background 0.15s;
+  flex: 1;
+  text-align: center;
+}
+
+.actionBtn:hover {
+  background: #f5f5f5;
+}
+
+.actionBtnPrimary {
+  background: #0a0a0a;
+  color: #fff;
+  border-color: #0a0a0a;
+  flex: 1.2;
+}
+
+.actionBtnPrimary:hover {
+  background: #222;
+}
+
+/* ─── Responsive (top section only) ─── */
+@media (max-width: 900px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .textRow {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .textRight {
+    justify-content: flex-start;
+  }
+
+  .darkPill {
+    min-width: unset;
+    width: 100%;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .headline {
+    font-size: 1.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .label {
+    margin-bottom: 0.75rem;
+  }
+
+  .browser {
+    margin: 12px;
+  }
+}
