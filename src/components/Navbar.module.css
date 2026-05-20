@@ -172,7 +172,7 @@
   width: 85%;
   max-width: 380px;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(25px) saturate(190%);
   -webkit-backdrop-filter: blur(25px) saturate(190%);
   z-index: 1100;
@@ -349,7 +349,7 @@
 /* Media Queries */
 @media (max-width: 900px) {
   .container {
-    padding: 0 2.5rem;
+    padding: 0 1rem;
   }
 
   .links {
