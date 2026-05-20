@@ -1,6 +1,7 @@
 :root {
   --background: white;
-  --foreground: #0a0a0a;
+  --foreground: #0c0c30;
+  --primary: #302fbc;
   --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
 }
 
@@ -35,8 +36,20 @@ a {
 button {
   cursor: pointer;
   border: none;
-  background: none;
+  background: #0c0c30;
+  color: #ffffff;
   font-family: inherit;
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+  color: #302fbc;
+  font-style: italic;
+  font-weight: 600;
 }
 
 /* ─── Shared section container ─── */

@@ -15,7 +15,7 @@
   display: inline-block;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #5b6cf8;
+  color: #302fbc;
   letter-spacing: 0.02em;
   margin-bottom: 1.25rem;
 }
@@ -26,7 +26,7 @@
   font-weight: 500;
   line-height: 1.06;
   letter-spacing: -0.04em;
-  color: #0a0a0a;
+  color: #0c0c30;
   margin-bottom: 2.5rem;
 }
 
@@ -53,12 +53,12 @@
 }
 
 .highlight {
-  color: #3b4fcf;
+  color: #302fbc;
   font-weight: 500;
 }
 
 .highlightPurple {
-  color: #5b6cf8;
+  color: #302fbc;
   font-weight: 600;
 }
 
@@ -72,7 +72,7 @@
   display: inline-flex;
   align-items: center;
   gap: 1.5rem;
-  background: #0a0a0a;
+  background: #0c0c30;
   color: #ffffff;
   padding: 1.1rem 1.1rem 1.1rem 1.6rem;
   border-radius: 100px;
@@ -189,7 +189,7 @@
 .logoText {
   font-weight: 800;
   font-size: 14px;
-  color: #0a0a0a;
+  color: #0c0c30;
 }
 
 .navLinks {
@@ -239,7 +239,7 @@
 .jobTitle {
   font-size: 26px;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #0c0c30;
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
@@ -285,9 +285,9 @@
 }
 
 .tabActive {
-  color: #0a0a0a;
+  color: #0c0c30;
   font-weight: 600;
-  border-bottom-color: #0a0a0a;
+  border-bottom-color: #302fbc;
 }
 
 .tabActions {
@@ -299,10 +299,10 @@
 .tabBtn {
   padding: 6px 14px;
   font-size: 13px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #0c0c30;
   border-radius: 6px;
-  background: #fff;
-  color: #555;
+  background: #0c0c30;
+  color: #ffffff;
   cursor: pointer;
   font-family: inherit;
 }
@@ -311,7 +311,7 @@
 .sectionLabel {
   font-size: 14px;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #0c0c30;
   margin-bottom: 16px;
 }
 
@@ -383,7 +383,7 @@
 .kanbanCardName {
   font-size: 13px;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #0c0c30;
 }
 
 .kanbanCardRole {

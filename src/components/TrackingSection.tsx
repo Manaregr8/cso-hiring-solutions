@@ -33,7 +33,7 @@ export default function TrackingSection() {
 
         {/* ── Headline ── */}
         <h2 className={styles.headline}>
-          Orchestrate your pipeline<br />
+          <em>Orchestrate your pipeline</em><br />
           without the busywork.
         </h2>
 

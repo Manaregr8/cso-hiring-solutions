@@ -10,7 +10,7 @@ export default function ProcessSection() {
         <div className={styles.header}>
           <div className={styles.textContent}>
             <h2 className={styles.heading}>
-              CSO's process is light years faster than<br />traditional tools and platforms.
+              CSO's process is <em>light years faster</em> than<br />traditional tools and platforms.
             </h2>
             <p className={styles.subheading}>
               Regular sourcing & evaluation are manual and take 30+ days per role.<br />

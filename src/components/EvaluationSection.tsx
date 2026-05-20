@@ -33,8 +33,7 @@ export default function EvaluationSection() {
 
         {/* ── Headline ── */}
         <h2 className={styles.headline}>
-          Qualify candidates with deep<br />
-          contextual intelligence.
+          Qualify candidates with <em>deep contextual intelligence</em>.
         </h2>
 
         {/* ── Two-column row ── */}

@@ -6,7 +6,7 @@ export default function SourceSection() {
       <div className={styles.card}>
         {/* ── Headline spanning full width ── */}
         <h2 className={styles.headline}>
-          Source, track and hire<br />
+          <em>Source, track and hire</em><br />
           talent in one place.
         </h2>
 

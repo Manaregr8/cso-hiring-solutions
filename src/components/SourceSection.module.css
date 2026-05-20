@@ -20,7 +20,7 @@
   font-weight: 500;
   line-height: 1.08;
   letter-spacing: -0.04em;
-  color: #0a0a0a;
+  color: #0c0c30;
   margin-bottom: 3rem;
 }
 
@@ -52,7 +52,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
-  background: #0a0a0a;
+  background: #0c0c30;
   color: #ffffff;
   padding: 0.6rem 1.4rem 0.6rem 0.6rem;
   border-radius: 100px;
@@ -60,15 +60,17 @@
   font-weight: 600;
   margin-top: 0.5rem;
   cursor: pointer;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   font-family: inherit;
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transition: opacity 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
   width: fit-content;
 }
 
 .cta:hover {
-  opacity: 0.85;
+  opacity: 0.95;
   transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(48, 47, 188, 0.35);
 }
 
 .arrowCircle {
@@ -78,7 +80,7 @@
   width: 34px;
   height: 34px;
   background: #ffffff;
-  color: #0a0a0a;
+  color: #0c0c30;
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -127,14 +129,14 @@
   height: 28px;
   background: #eef0ff;
   border-radius: 50%;
-  color: #5b6cf8;
+  color: #302fbc;
   flex-shrink: 0;
 }
 
 .badgeText {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #0a0a0a;
+  color: #0c0c30;
   white-space: nowrap;
 }
 

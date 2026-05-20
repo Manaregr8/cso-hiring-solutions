@@ -5,7 +5,7 @@ export default function FounderLetter() {
     <section className={styles.section}>
       <div className={styles.content}>
         <h2 className={styles.heading}>
-          An open letter from our founder — the future of hiring is human-first.
+          An open letter from our founder — the <em>future of hiring</em> is human-first.
         </h2>
         
         <p className={styles.paragraph}>
@@ -25,7 +25,7 @@ export default function FounderLetter() {
         </p>
 
         <h3 className={styles.subheading}>
-          A future where everyone wins.
+          <em>A future where everyone wins.</em>
         </h3>
 
         <p className={styles.paragraph}>
@@ -43,7 +43,7 @@ export default function FounderLetter() {
         <div className={styles.signoffContainer}>
           <p className={styles.signoffText}>
             Sincerely,<br />
-            Darko Stanimirov
+            Sanjay Sinha
           </p>
           <div className={styles.signature}>
             <svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">

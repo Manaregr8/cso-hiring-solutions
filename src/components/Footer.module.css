@@ -79,9 +79,9 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
-  background-color: #ffffff;
+  background-color: #0c0c30;
   border-radius: 12px;
-  color: #111;
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.875rem;
   transition: transform 0.2s ease, opacity 0.2s;
@@ -98,7 +98,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  background-color: #111;
+  background-color: #302fbc;
   color: #fff;
   border-radius: 8px;
 }
@@ -117,6 +117,10 @@
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.logoImage {
+  filter: invert(1) brightness(2);
 }
 
 .logoText {

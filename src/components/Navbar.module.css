@@ -1,13 +1,27 @@
 /* ─── Navbar ─── */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 72px;
   display: flex;
   align-items: center;
   z-index: 1000;
+
+  backdrop-filter: blur(35px) saturate(160%);
+
+  transition: background 0.35s ease, backdrop-filter 0.35s ease,
+    border-color 0.35s ease, box-shadow 0.35s ease;
+  will-change: backdrop-filter;
+}
+
+/* Glassmorphism kicks in after 10px scroll */
+.scrolled {
+  background: rgba(255, 255, 255, 0.471);
+    -webkit-backdrop-filter: blur(35px) saturate(160%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
 }
 
 .container {
@@ -26,7 +40,7 @@
   gap: 0.5rem;
   font-size: 1.35rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #0c0c30;
   letter-spacing: -0.02em;
   z-index: 10;
 }
@@ -44,7 +58,7 @@
 .links a {
   font-size: 0.82rem;
   font-weight: 500;
-  color: #0a0a0a;
+  color: #0c0c30;
   transition: opacity 0.2s ease;
   letter-spacing: 0.01em;
 }
@@ -54,17 +68,18 @@
 }
 
 .ctaLink {
-  background: #0a0a0a;
+  background: #0c0c30 !important;
   color: #ffffff !important;
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
   font-weight: 600 !important;
-  transition: transform 0.2s ease, opacity 0.2s ease !important;
+  transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .ctaLink:hover {
-  opacity: 0.9 !important;
+  opacity: 0.95 !important;
   transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(48, 47, 188, 0.25);
 }
 
 /* Unique Mobile Menu Toggle Button */
@@ -105,7 +120,7 @@
 .line {
   display: block;
   height: 2px;
-  background: #0a0a0a;
+  background: #0c0c30;
   border-radius: 2px;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     opacity 0.3s ease,
@@ -157,7 +172,7 @@
   width: 85%;
   max-width: 380px;
   height: 100vh;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(25px) saturate(190%);
   -webkit-backdrop-filter: blur(25px) saturate(190%);
   z-index: 1100;
@@ -212,7 +227,7 @@
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #0a0a0a;
+  color: #0c0c30;
   opacity: 0.4;
   letter-spacing: 0.15em;
   margin-bottom: 0.5rem;
@@ -260,7 +275,7 @@
 .staggerLink a {
   font-size: 1.85rem;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #0c0c30;
   letter-spacing: -0.02em;
   transition: opacity 0.2s ease, transform 0.2s ease;
   display: inline-block;
@@ -294,19 +309,19 @@
   display: block;
   width: 100%;
   text-align: center;
-  background: #0a0a0a;
+  background: #302fbc;
   color: #ffffff;
   padding: 1.1rem;
   border-radius: 40px;
   font-size: 0.95rem;
   font-weight: 600;
-  box-shadow: 0 10px 30px rgba(10, 10, 10, 0.15);
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(48, 47, 188, 0.25);
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .drawerCta:hover {
-  background: #222222;
-  box-shadow: 0 15px 35px rgba(10, 10, 10, 0.25);
+  opacity: 0.95;
+  box-shadow: 0 15px 35px rgba(48, 47, 188, 0.35);
   transform: translateY(-2px);
 }
 
@@ -316,7 +331,7 @@
 
 .footerInfo {
   font-size: 0.78rem;
-  color: #0a0a0a;
+  color: #0c0c30;
   line-height: 1.6;
 }
 

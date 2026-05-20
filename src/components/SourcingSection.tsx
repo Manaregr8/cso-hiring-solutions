@@ -31,7 +31,7 @@ export default function SourcingSection() {
         <span className={styles.label}>Sourcing</span>
 
         <h2 className={styles.headline}>
-          Find exceptional talent others<br />
+          Find <em>exceptional talent</em> others<br />
           miss, magically.
         </h2>
 

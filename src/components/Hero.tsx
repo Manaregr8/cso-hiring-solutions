@@ -6,44 +6,59 @@ import styles from './Hero.module.css';
 export default function Hero() {
   const line1 = "Recruiting system that helps you";
   const line2 = "hire better talent faster.";
+  const highlightWords = new Set(['hire', 'better', 'talent', 'faster']);
 
   const charVariants = {
     hidden: { opacity: 0, y: 10 },
     visible: { opacity: 1, y: 0 }
   };
 
+  const shouldHighlight = (word: string) => {
+    return highlightWords.has(word.replace(/[.,!?]/g, '').toLowerCase());
+  };
+
   return (
     <section className={styles.hero}>
       {/* ── Text Content ── */}
       <div className={styles.content}>
-        <motion.h1 
+        <motion.h1
           className={styles.title}
           initial="hidden"
           animate="visible"
           transition={{ staggerChildren: 0.02 }}
         >
-          {line1.split(' ').map((word, wordIdx) => (
-            <span key={`l1w-${wordIdx}`} style={{ display: 'inline-block', marginRight: '0.22em' }}>
-              {word.split('').map((char, charIdx) => (
-                <motion.span key={`l1c-${charIdx}`} variants={charVariants} style={{ display: 'inline-block' }}>
-                  {char}
-                </motion.span>
-              ))}
-            </span>
-          ))}
+          {line1.split(' ').map((word, wordIdx) => {
+            const highlighted = shouldHighlight(word);
+            const wordNode = (
+              <span key={`l1w-${wordIdx}`} style={{ display: 'inline-block', marginRight: '0.22em' }}>
+                {word.split('').map((char, charIdx) => (
+                  <motion.span key={`l1c-${charIdx}`} variants={charVariants} style={{ display: 'inline-block' }}>
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
+            );
+
+            return highlighted ? <em key={`em1-${wordIdx}`}>{wordNode}</em> : wordNode;
+          })}
           <br />
-          {line2.split(' ').map((word, wordIdx) => (
-            <span key={`l2w-${wordIdx}`} style={{ display: 'inline-block', marginRight: '0.22em' }}>
-              {word.split('').map((char, charIdx) => (
-                <motion.span key={`l2c-${charIdx}`} variants={charVariants} style={{ display: 'inline-block' }}>
-                  {char}
-                </motion.span>
-              ))}
-            </span>
-          ))}
+          {line2.split(' ').map((word, wordIdx) => {
+            const highlighted = shouldHighlight(word);
+            const wordNode = (
+              <span key={`l2w-${wordIdx}`} style={{ display: 'inline-block', marginRight: '0.22em' }}>
+                {word.split('').map((char, charIdx) => (
+                  <motion.span key={`l2c-${charIdx}`} variants={charVariants} style={{ display: 'inline-block' }}>
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
+            );
+
+            return highlighted ? <em key={`em-${wordIdx}`}>{wordNode}</em> : wordNode;
+          })}
         </motion.h1>
-        
-        <motion.p 
+
+        <motion.p
           className={styles.description}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,8 +67,8 @@ export default function Hero() {
           Source and evaluate extraordinary talent, automatically.<br />
           Cut weeks off your hiring process.
         </motion.p>
-        
-        <motion.div 
+
+        <motion.div
           className={styles.ctaWrapper}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +90,7 @@ export default function Hero() {
                 <polyline points="12 5 19 12 12 19" />
               </svg>
             </span>
-            Get early access
+            <span className={styles.ctaText}>Get early access</span>
           </button>
         </motion.div>
       </div>
@@ -97,7 +112,7 @@ export default function Hero() {
 
       {/* ── Two-Column Info Section ── */}
       <div className={styles.infoSection}>
-        <motion.div 
+        <motion.div
           className={`${styles.infoCol} ${styles.infoFirst}`}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +121,7 @@ export default function Hero() {
         >
           <div className={styles.infoothercontainer}>
             <h2 className={styles.infoTitle}>
-              Your own, personal recruiter.<br />
+              Your own, <em>personal recruiter</em>.<br />
               Completely automated.
             </h2>
             <p className={styles.infoText}>
@@ -118,7 +133,7 @@ export default function Hero() {
           </div>
         </motion.div>
         <div className={styles.infoDivider} />
-        <motion.div 
+        <motion.div
           className={styles.infoCol}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -126,7 +141,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
         >
           <h2 className={styles.infoTitle}>
-            Win back time.<br />
+            <em>Win back time.</em><br />
             Improve your results.
           </h2>
           <p className={styles.infoText}>

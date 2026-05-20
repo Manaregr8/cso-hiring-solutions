@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -25,11 +26,13 @@ export default function Footer() {
         <div className={styles.bottomSection}>
           <div className={styles.brandInfo}>
             <div className={styles.logo}>
-              <svg width="28" height="12" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0" y="0" width="14" height="10" rx="5" fill="#FFFFFF"/>
-                <rect x="10" y="0" width="14" height="10" rx="5" fill="#FFFFFF" opacity="0.8"/>
-              </svg>
-              <span className={styles.logoText}>cso</span>
+              <Image 
+                src="/logo.png" 
+                alt="CSO" 
+                width={183} 
+                height={30} 
+                className={styles.logoImage}
+              />
             </div>
             <p className={styles.brandDesc}>
               Your own, personal recruiter.<br />
