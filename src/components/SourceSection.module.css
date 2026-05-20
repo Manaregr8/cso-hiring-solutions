@@ -46,7 +46,10 @@
   font-weight: 400;
   max-width: 320px;
 }
-
+.image{
+  width: 100%;
+  border-radius: 10px;
+}
 /* ─── Dark CTA button ─── */
 .cta {
   display: inline-flex;

@@ -1,5 +1,5 @@
 import styles from './SourceSection.module.css';
-
+import Image from 'next/image';
 export default function SourceSection() {
   return (
     <section className={styles.wrapper}>
@@ -47,7 +47,7 @@ export default function SourceSection() {
           <div className={styles.right}>
             <div className={styles.imageCard}>
               {/* Grey placeholder — swap with <Image> when ready */}
-              <div className={styles.imagePlaceholder} />
+              <img src="/wone pics/wBJk7LNXvTESOO4yMsT90pxUM.avif" alt="Product screenshot" className={styles.image} />
 
               {/* Floating badge */}
               <div className={styles.badge}>

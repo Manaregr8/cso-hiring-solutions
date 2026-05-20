@@ -96,19 +96,39 @@ export default function Hero() {
       </div>
 
       {/* ── Fan Cards ── */}
-      <div className={styles.visualContainer}>
-        <div className={styles.cardsTrack}>
-          {[1, 2, 3, 4, 5].map((num, i) => (
-            <motion.div
-              key={num}
-              className={`${styles.card} ${styles[`card${num}`]}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1.2 + i * 0.1 }}
-            />
-          ))}
-        </div>
-      </div>
+ {/* ── Fan Cards ── */}
+{/* ── Fan Cards ── */}
+<div className={styles.visualContainer}>
+  <div className={styles.cardsTrack}>
+    {[
+  { id: 1, src: '/wone pics/IC3Wd8F0sSQJVtmLR5CNaSN8Y8.avif', alt: 'Candidate 1', rotate: -4, hoverRotate: -3, hoverY: -12 },
+  { id: 2, src: '/wone pics/Jjj802l1XItdAJpCXoQW54TS7FM.avif', alt: 'Candidate 2', rotate: 2.5, hoverRotate: 2, hoverY: -18 },
+  { id: 3, src: '/wone pics/LStCqvHOrjJLuyvdLl8aSQ0MaLc.avif', alt: 'Candidate 3', rotate: -1.5, hoverRotate: -1.5, hoverY: -14 },
+  { id: 4, src: '/wone pics/qRJcad58tbyBsZ6lW7GYv2OfI.avif', alt: 'Candidate 4', rotate: 3.5, hoverRotate: 3, hoverY: -10 },
+  { id: 5, src: '/wone pics/vhibGHpSOhwSaXXHs6Jrjul0pRg.avif', alt: 'Candidate 5', rotate: -2.5, hoverRotate: -2, hoverY: -16 },
+].map((card, i) => (
+  <motion.div
+    key={card.id}
+    className={`${styles.card} ${styles[`card${card.id}`]}`}
+    initial={{ opacity: 0, y: 30, rotate: card.rotate }}
+    animate={{ opacity: 1, y: 0, rotate: card.rotate }}
+    transition={{ duration: 0.6, delay: 1.2 + i * 0.1 }}
+    whileHover={{
+      rotate: card.hoverRotate,
+      y: card.hoverY,
+      scale: 1.04,
+      transition: { duration: 0.3, ease: 'easeOut' }
+    }}
+  >
+    <img
+      src={card.src}
+      alt={card.alt}
+      style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+    />
+  </motion.div>
+))}
+  </div>
+</div>
 
       {/* ── Two-Column Info Section ── */}
       <div className={styles.infoSection}>

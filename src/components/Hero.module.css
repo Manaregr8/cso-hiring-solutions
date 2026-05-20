@@ -16,6 +16,8 @@
   padding: 0 2rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
@@ -36,7 +38,6 @@
   margin-bottom: 2rem;
 }
 
-/* ─── CTA Button ─── */
 /* ─── CTA Button ─── */
 .ctaWrapper {
   display: flex;
@@ -65,12 +66,10 @@
   opacity: 0.95;
 }
 
-/* Arrow moves RIGHT */
 .cta:hover .arrowCircle {
   transform: translateX(6px);
 }
 
-/* Text moves LEFT */
 .cta:hover .ctaText {
   transform: translateX(-4px);
 }
@@ -99,126 +98,60 @@
 /* ─── Fan Cards ─── */
 .visualContainer {
   width: 100%;
-  position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 0 2rem 2rem;
+  position: relative;
+  z-index: 0;
 }
 
 .cardsTrack {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  /* Cards are positioned relative to a center baseline */
+  flex-direction: row;
   position: relative;
-  width: 100%;
-  height: 340px;
+  height: 230px;
 }
 
 .card {
-  position: absolute;
-  width: 230px;
-  height: 310px;
-  border-radius: 1.5rem;
-  background: #c8c8c2;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
-  bottom: 0;
-  transform-origin: bottom center;
+  width: 200px;
+  height: 200px;
+  border-radius: 1.2rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
 }
 
-/* Grey texture variation per card */
-.card1 {
-  background: #b8b8b2;
-}
+.card1 { margin-right: -18px; z-index: 1; }
+.card2 { margin-right: -18px; z-index: 2; }
+.card3 { margin-right: -18px; z-index: 3; }
+.card4 { margin-right: -18px; z-index: 2; }
+.card5 { z-index: 1; }
 
-.card2 {
-  background: #c2c2bc;
-}
-
-.card3 {
-  background: #d0d0ca;
-}
-
-.card4 {
-  background: #c2c2bc;
-}
-
-.card5 {
-  background: #b8b8b2;
-}
-
-/* Transforms: fan spread from center */
-.card1 {
-  left: 50%;
-  transform: translateX(calc(-50% - 330px)) rotate(-14deg);
-  z-index: 1;
-}
-
-.card2 {
-  left: 50%;
-  transform: translateX(calc(-50% - 165px)) rotate(-7deg);
-  z-index: 2;
-}
-
-.card3 {
-  left: 50%;
-  transform: translateX(-50%) rotate(0deg);
-  z-index: 3;
-  background: #d8d8d2;
-}
-
-.card4 {
-  left: 50%;
-  transform: translateX(calc(-50% + 165px)) rotate(7deg);
-  z-index: 2;
-}
-
-.card5 {
-  left: 50%;
-  transform: translateX(calc(-50% + 330px)) rotate(14deg);
-  z-index: 1;
-}
-
-/* Decorative inner lines for visual interest */
 .card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(170deg,
-      rgba(255, 255, 255, 0.12) 0%,
-      transparent 50%,
-      rgba(0, 0, 0, 0.06) 100%);
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* ─── Responsive ─── */
 @media (max-width: 1100px) {
   .card {
-    width: 200px;
-    height: 290px;
-  }
-
-  .card1 {
-    transform: translateX(calc(-50% - 270px)) rotate(-14deg);
-  }
-
-  .card2 {
-    transform: translateX(calc(-50% - 135px)) rotate(-7deg);
-  }
-
-  .card3 {
-    transform: translateX(-50%) rotate(0deg);
-  }
-
-  .card4 {
-    transform: translateX(calc(-50% + 135px)) rotate(7deg);
-  }
-
-  .card5 {
-    transform: translateX(calc(-50% + 270px)) rotate(14deg);
+    width: 170px;
+    height: 240px;
   }
 }
 
@@ -233,65 +166,33 @@
   }
 
   .cardsTrack {
-    height: 260px;
+    height: 220px;
   }
 
   .card {
-    width: 140px;
-    height: 200px;
-    border-radius: 1rem;
+    width: 130px;
+    height: 185px;
+    border-radius: 0.9rem;
   }
 
-  .card1 {
-    transform: translateX(calc(-50% - 185px)) rotate(-14deg);
-  }
-
-  .card2 {
-    transform: translateX(calc(-50% - 93px)) rotate(-7deg);
-  }
-
-  .card3 {
-    transform: translateX(-50%) rotate(0deg);
-  }
-
-  .card4 {
-    transform: translateX(calc(-50% + 93px)) rotate(7deg);
-  }
-
-  .card5 {
-    transform: translateX(calc(-50% + 185px)) rotate(14deg);
+  .card1, .card2, .card3, .card4 {
+    margin-right: -14px;
   }
 }
 
 @media (max-width: 480px) {
   .cardsTrack {
-    height: 200px;
+    height: 170px;
   }
 
   .card {
-    width: 110px;
-    height: 160px;
-    border-radius: 0.75rem;
+    width: 100px;
+    height: 145px;
+    border-radius: 0.7rem;
   }
 
-  .card1 {
-    transform: translateX(calc(-50% - 140px)) rotate(-14deg);
-  }
-
-  .card2 {
-    transform: translateX(calc(-50% - 70px)) rotate(-7deg);
-  }
-
-  .card3 {
-    transform: translateX(-50%) rotate(0deg);
-  }
-
-  .card4 {
-    transform: translateX(calc(-50% + 70px)) rotate(7deg);
-  }
-
-  .card5 {
-    transform: translateX(calc(-50% + 140px)) rotate(14deg);
+  .card1, .card2, .card3, .card4 {
+    margin-right: -10px;
   }
 }
 
@@ -308,7 +209,6 @@
 .infoCol {
   flex: 1;
   padding: 100px;
-
 }
 
 .infoDivider {
@@ -326,8 +226,6 @@
   color: #0c0c30;
   margin-bottom: 1.5rem;
 }
-
-
 
 .infoText {
   font-size: clamp(0.9rem, 1.2vw, 1rem);
