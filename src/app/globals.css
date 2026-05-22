@@ -3,6 +3,8 @@
   --foreground: #0c0c30;
   --primary: #302fbc;
   --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-rethink: "Rethink Sans", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 * {
@@ -48,8 +50,9 @@ h4 em,
 h5 em,
 h6 em {
   color: #302fbc;
-  font-style: italic;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--font-rethink);
 }
 
 /* ─── Shared section container ─── */
