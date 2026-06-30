@@ -6,8 +6,8 @@ export default function SourceSection() {
       <div className={styles.card}>
         {/* ── Headline spanning full width ── */}
         <h2 className={styles.headline}>
-          <em>Source, track and hire</em><br />
-          talent in one place.
+          <em>Strategic Hiring.</em><br />
+          End-to-End Recruitment.
         </h2>
 
         {/* ── Two-column body ── */}
@@ -15,13 +15,10 @@ export default function SourceSection() {
           {/* Left: text + CTA */}
           <div className={styles.left}>
             <p className={styles.para}>
-              All you need to start sourcing is a job description. CSO will
-              find and qualify talent within one minute so you don&apos;t have
-              to sift through hundreds of resumes.
+              Whether you're hiring a single leader or building an entire team, we manage the journey from talent mapping and candidate sourcing to assessment, interview coordination, and successful on-boarding.
             </p>
             <p className={styles.para}>
-              Candidates are qualified and ranked, so you&apos;re not wasting
-              time weeding out unqualified talent.
+              Our research-driven approach identifies professionals who possess not only the right skills and experience, but also the mindset and cultural alignment to create lasting business impact.
             </p>
             <button className={styles.cta}>
               <span className={styles.arrowCircle}>
@@ -39,7 +36,7 @@ export default function SourceSection() {
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
               </span>
-              Get early access
+              Explore our Portfolio
             </button>
           </div>
 

@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  padding: 8rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   background-color: var(--background);
@@ -8,7 +8,7 @@
 
 .content {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -56,27 +56,68 @@
   margin-top: 1rem;
 }
 
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 3rem 0;
   }
+
   .heading {
     font-size: 1.85rem;
     margin-bottom: 1.5rem;
   }
+
   .content {
     padding: 0 1.25rem;
   }
+
   .paragraph {
     font-size: 0.95rem;
     margin-bottom: 1rem;
   }
+
   .subheading {
     font-size: 1.15rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
   }
+
   .signoffContainer {
     margin-top: 1.5rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
   }
 }

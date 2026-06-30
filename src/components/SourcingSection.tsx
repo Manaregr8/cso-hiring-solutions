@@ -31,22 +31,17 @@ export default function SourcingSection() {
         <span className={styles.label}>Sourcing</span>
 
         <h2 className={styles.headline}>
-          Find <em>exceptional talent</em> others<br />
-          miss, magically.
+          Find <em>exceptional talent</em><br />
+          others never reach.
         </h2>
 
         <div className={styles.textRow}>
           <div className={styles.textLeft}>
             <p className={styles.bodyText}>
-              CSO actively finds candidates using{' '}
-              <span className={styles.highlight}>natural language and contextual search</span>,
-              going beyond boolean filtering to find talent that{' '}
-              <span className={styles.highlight}>matches your exact needs</span>.
+              The best candidates aren't always actively looking for their next opportunity. Through extensive research, talent mapping, executive search, and industry networks, we identify and engage professionals who are often beyond the reach of traditional recruitment methods.
             </p>
             <p className={styles.bodyText}>
-              Save weeks sourcing and get a curated list of candidates in front
-              of you in as little as{' '}
-              <span className={styles.highlightAmber}>20 seconds</span>.
+              Every shortlist is carefully evaluated for expertise, leadership potential, cultural alignment, and long-term business impact—so you meet candidates worth hiring, not just those available.
             </p>
           </div>
           <div className={styles.textRight}>
@@ -58,8 +53,7 @@ export default function SourcingSection() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className={styles.pillContent}>
-                <span className={styles.pillTitle}>Learn about Sourcing</span>
-                <span className={styles.pillSub}>Save weeks sourcing talent</span>
+                <span className={styles.pillTitle}>Our search methodology</span>
               </div>
               <span className={styles.pillArrow}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"

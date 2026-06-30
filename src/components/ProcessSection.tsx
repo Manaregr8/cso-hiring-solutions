@@ -10,15 +10,16 @@ export default function ProcessSection() {
         <div className={styles.header}>
           <div className={styles.textContent}>
             <h2 className={styles.heading}>
-              CSO's process is <em>light years faster</em> than<br />traditional tools and platforms.
+              A recruitment process <em>built around your business</em>.
             </h2>
             <p className={styles.subheading}>
-              Regular sourcing & evaluation are manual and take 30+ days per role.<br />
-              <span className={styles.highlight}>CSO sources and evaluates talent within one minute.</span>
+              Hiring is most effective when every stakeholder is aligned. We provide a structured, transparent recruitment process with regular progress updates, coordinated interview management, and continuous collaboration—keeping your team informed from the initial search through the final offer.
+              <br />
+              <span className={styles.highlight}>Our streamlined approach reduces hiring delays, improves decision-making, and ensures every engagement moves forward with clarity and confidence.</span>
             </p>
           </div>
           <button className={styles.ctaButton}>
-            Get early access
+            Talk to an Expert
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

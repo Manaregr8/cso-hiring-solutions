@@ -8,10 +8,10 @@ export default function Footer() {
       <div className={styles.content}>
         <div className={styles.callToAction}>
           <h2 className={styles.heading}>
-            Hire better. Faster.<br />Take your time back.
+            Better recruitment isn't faster. It's smarter.
           </h2>
-          <p className={styles.subheading}>
-            Make hiring easier than ever.
+          <p className={styles.subheading} style={{ maxWidth: 600, margin: '0 auto 2rem' }}>
+            Hiring the right person isn't about filling vacancies quickly—it's about making decisions that create long-term business value. Every search is guided by insight, precision, and partnership—not shortcuts.
           </p>
           <button className={styles.ctaButton}>
             <div className={styles.buttonIcon}>
@@ -19,7 +19,7 @@ export default function Footer() {
                 <path d="M3.5 1.5L7 5L3.5 8.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            Get early access
+            Talk to an Expert
           </button>
         </div>
 
@@ -35,8 +35,7 @@ export default function Footer() {
               />
             </div>
             <p className={styles.brandDesc}>
-              Your own, personal recruiter.<br />
-              Completely automated.
+              Building teams that build Businesses.
             </p>
             <div className={styles.socialLine}></div>
             <Link href="#" className={styles.socialLink}>
@@ -54,9 +53,8 @@ export default function Footer() {
               <Link href="#" className={styles.linkItem}>Communication</Link>
             </div>
             <div className={styles.linkGroup}>
-              <h4 className={styles.linkHeading}>Product</h4>
-              <Link href="#" className={styles.linkItem} style={{ color: '#666' }}>Pricing</Link>
-              <Link href="#" className={styles.linkItem}>Early access</Link>
+              <h4 className={styles.linkHeading}>Reach us</h4>
+              <Link href="#" className={styles.linkItem} style={{ color: '#666' }}>Phone: (91) 99999</Link>
             </div>
           </div>
         </div>

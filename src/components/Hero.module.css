@@ -127,22 +127,38 @@
   position: relative;
 }
 
-.card1 { margin-right: -18px; z-index: 1; }
-.card2 { margin-right: -18px; z-index: 2; }
-.card3 { margin-right: -18px; z-index: 3; }
-.card4 { margin-right: -18px; z-index: 2; }
-.card5 { z-index: 1; }
+.card1 {
+  margin-right: -18px;
+  z-index: 1;
+}
+
+.card2 {
+  margin-right: -18px;
+  z-index: 2;
+}
+
+.card3 {
+  margin-right: -18px;
+  z-index: 3;
+}
+
+.card4 {
+  margin-right: -18px;
+  z-index: 2;
+}
+
+.card5 {
+  z-index: 1;
+}
 
 .card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    170deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    transparent 50%,
-    rgba(0, 0, 0, 0.04) 100%
-  );
+  background: linear-gradient(170deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 50%,
+      rgba(0, 0, 0, 0.04) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -175,7 +191,10 @@
     border-radius: 0.9rem;
   }
 
-  .card1, .card2, .card3, .card4 {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
     margin-right: -14px;
   }
 }
@@ -191,7 +210,10 @@
     border-radius: 0.7rem;
   }
 
-  .card1, .card2, .card3, .card4 {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
     margin-right: -10px;
   }
 }

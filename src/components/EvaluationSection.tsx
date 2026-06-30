@@ -33,19 +33,17 @@ export default function EvaluationSection() {
 
         {/* ── Headline ── */}
         <h2 className={styles.headline}>
-          Qualify candidates with <em>deep contextual intelligence</em>.
+          <em>Evaluate beyond</em> the Résumé.
         </h2>
 
         {/* ── Two-column row ── */}
         <div className={styles.textRow}>
           <div className={styles.textLeft}>
             <p className={styles.bodyText}>
-              CSO automatically parses and reviews candidate technical depth. By conducting{' '}
-              <span className={styles.highlight}>contextual screening chats</span> and deep profile analysis, our platform delivers an objective candidate scorecard.
+              Exceptional hiring goes beyond. Our structured process assesses technical expertise, leadership capability, cultural alignment, and long-term potential to ensure every shortlisted candidate is equipped to succeed in your organization.
             </p>
             <p className={styles.bodyText}>
-              Understand strengths, experience levels, and potential skill gaps in as little as{' '}
-              <span className={styles.highlightGreen}>30 seconds</span>.
+              With in-depth interviews, market insights, and role-specific assessments, we provide the clarity you need to make confident hiring decisions.
             </p>
           </div>
           <div className={styles.textRight}>
@@ -58,7 +56,6 @@ export default function EvaluationSection() {
             >
               <div className={styles.pillContent}>
                 <span className={styles.pillTitle}>Learn about Evaluation</span>
-                <span className={styles.pillSub}>Automated candidate screening</span>
               </div>
               <span className={styles.pillArrow}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
