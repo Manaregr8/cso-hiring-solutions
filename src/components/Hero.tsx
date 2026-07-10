@@ -3,7 +3,11 @@
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 
-export default function Hero() {
+interface HeroProps {
+  onContactClick?: () => void;
+}
+
+export default function Hero({ onContactClick }: HeroProps) {
   const line1 = "Every great business begins with ";
   const line2 = "the right hire.";
   const highlightWords = new Set(['the', 'right', 'hire']);
@@ -74,7 +78,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
-          <button className={styles.cta}>
+          <button id="hero-find-talent-btn" className={styles.cta} onClick={onContactClick}>
             <span className={styles.arrowCircle}>
               <svg
                 width="15"
@@ -92,7 +96,7 @@ export default function Hero() {
             </span>
             <span className={styles.ctaText}>Find Talent</span>
           </button>
-          <button className={styles.cta} style={{ marginLeft: '1rem', background: 'transparent', color: 'var(--foreground)', border: '1px solid var(--foreground)' }}>
+          <button id="hero-talk-expert-btn" className={styles.cta} onClick={onContactClick} style={{ marginLeft: '1rem', background: 'transparent', color: 'var(--foreground)', border: '1px solid var(--foreground)' }}>
             <span className={styles.ctaText}>Talk to an Expert</span>
           </button>
         </motion.div>

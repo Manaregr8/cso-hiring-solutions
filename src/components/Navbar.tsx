@@ -5,7 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
 
-export default function Navbar() {
+interface NavbarProps {
+  onContactClick?: () => void;
+}
+
+export default function Navbar({ onContactClick }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,12 +46,12 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className={styles.links}>
-          <Link href="/">Home</Link>
-          <Link href="/sourcing">Sourcing</Link>
-          <Link href="/evaluation">Evaluation</Link>
-          <Link href="/tracking">Tracking</Link>
-          <Link href="/communication">Communication</Link>
-          <Link href="/early-access" className={styles.ctaLink}>Early access</Link>
+          <Link href="#overview">Home</Link>
+          <Link href="#sourcing">Sourcing</Link>
+          <Link href="#evaluation">Evaluation</Link>
+          <Link href="#tracking">Tracking</Link>
+          <Link href="#communication">Communication</Link>
+          <button id="navbar-early-access-btn" onClick={onContactClick} className={styles.ctaLink}>Early access</button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -88,18 +92,18 @@ export default function Navbar() {
         <div className={styles.drawerMenu}>
           <span className={styles.menuLabel}>Navigation</span>
           <div className={styles.drawerLinks}>
-            <div className={styles.staggerLink}><Link href="/" onClick={closeMenu}>Home</Link></div>
-            <div className={styles.staggerLink}><Link href="/sourcing" onClick={closeMenu}>Sourcing</Link></div>
-            <div className={styles.staggerLink}><Link href="/evaluation" onClick={closeMenu}>Evaluation</Link></div>
-            <div className={styles.staggerLink}><Link href="/tracking" onClick={closeMenu}>Tracking</Link></div>
-            <div className={styles.staggerLink}><Link href="/communication" onClick={closeMenu}>Communication</Link></div>
+            <div className={styles.staggerLink}><Link href="#overview" onClick={closeMenu}>Home</Link></div>
+            <div className={styles.staggerLink}><Link href="#sourcing" onClick={closeMenu}>Sourcing</Link></div>
+            <div className={styles.staggerLink}><Link href="#evaluation" onClick={closeMenu}>Evaluation</Link></div>
+            <div className={styles.staggerLink}><Link href="#tracking" onClick={closeMenu}>Tracking</Link></div>
+            <div className={styles.staggerLink}><Link href="#communication" onClick={closeMenu}>Communication</Link></div>
           </div>
         </div>
 
         <div className={styles.drawerFooter}>
-          <Link href="/early-access" className={styles.drawerCta} onClick={closeMenu}>
+          <button id="drawer-request-access-btn" className={styles.drawerCta} onClick={() => { closeMenu(); onContactClick?.(); }}>
             Request Early Access
-          </Link>
+          </button>
           <div className={styles.footerInfo}>
             <p>Ready to revolutionize your hiring?</p>
             <span>cso.ai © {new Date().getFullYear()}</span>

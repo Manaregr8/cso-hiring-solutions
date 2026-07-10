@@ -73,6 +73,10 @@
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
   font-weight: 600 !important;
+  font-size: 0.82rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease !important;
 }
 

@@ -14,19 +14,40 @@ export default function ProductSection() {
 
         <div className={styles.logos}>
           <div className={styles.logo}>
-            <img src="./wone pics/image1.png" alt="Xebia" style={{ height: '36px', width: 'auto', opacity: 0.7 }} />
+            <img src="./wone pics/image1.png" alt="Xebia" style={{ padding: '6px' }} />
           </div>
           <div className={styles.logo}>
-            <img src="./wone pics/image2.png" alt="WNS" style={{ height: '36px', width: 'auto', opacity: 0.7 }} />
+            <img src="./wone pics/image2.png" alt="WNS" style={{ padding: '6px' }} />
           </div>
           <div className={styles.logo}>
-            <img src="./wone pics/image3.png" alt="QNU" style={{ height: '36px', width: 'auto', opacity: 0.7 }} />
+            <img src="./wone pics/image3.png" alt="QNU" />
           </div>
           <div className={styles.logo}>
-            <img src="./wone pics/image4.png" alt="social" style={{ height: '36px', width: 'auto', opacity: 0.7 }} />
+            <img src="./wone pics/image4.png" alt="Social" />
           </div>
           <div className={styles.logo}>
-            <img src="./wone pics/image5.png" alt="coverself" style={{ height: '36px', width: 'auto', opacity: 0.7 }} />
+            <img src="./wone pics/image5.png" alt="Coverself" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/Amazon-Logo-StartupTalky.jpg" alt="Amazon" style={{ padding: '6px' }} />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/images (2).jpg" alt="Brand" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/images (1).jpg" alt="Brand" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/images.png" alt="Brand" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/opendeskinc_logo.jpg" alt="OpenDesk" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/Oracle_Logo.jpg" alt="Oracle" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/PwC_logo_rgb_colour_pos.png" alt="PwC" />
           </div>
         </div>
 

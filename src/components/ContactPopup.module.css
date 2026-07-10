@@ -1,0 +1,377 @@
+/* ─── Overlay / Backdrop ─── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(12, 12, 48, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  /* hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlayVisible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ─── Modal Card ─── */
+.modal {
+  position: relative;
+  background: #fafafa;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 780px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow:
+    0 32px 80px rgba(12, 12, 48, 0.22),
+    0 8px 24px rgba(12, 12, 48, 0.12);
+
+  /* hidden by default */
+  transform: translateY(28px) scale(0.97);
+  opacity: 0;
+  transition:
+    transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.32s ease;
+}
+
+.modalVisible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* ─── Close Button ─── */
+.closeBtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(12, 12, 48, 0.06);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #0c0c30;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.closeBtn:hover {
+  background: rgba(12, 12, 48, 0.12);
+  transform: rotate(90deg);
+}
+
+/* ─── Left / Form Side ─── */
+.formSide {
+  flex: 1;
+  padding: 3rem 3rem 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  color: #0c0c30;
+  margin-bottom: 1.8rem;
+}
+
+/* ─── Inputs ─── */
+.fieldGroup {
+  margin-bottom: 0.2rem;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid rgba(12, 12, 48, 0.18);
+  padding: 0.75rem 0;
+  font-size: 0.95rem;
+  color: #0c0c30;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+  margin-bottom: 1.1rem;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus {
+  border-color: #302fbc;
+}
+
+/* ─── Radio Group ─── */
+.radioGroup {
+  margin-top: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.radioLabel {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 0.85rem;
+  font-weight: 500;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.93rem;
+  color: #0c0c30;
+  cursor: pointer;
+  padding: 0.35rem 0;
+  transition: color 0.15s ease;
+  user-select: none;
+}
+
+.radioItem:hover {
+  color: #302fbc;
+}
+
+.radioItemSelected {
+  color: #302fbc;
+  font-weight: 500;
+}
+
+.radioCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(12, 12, 48, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.2s ease;
+}
+
+.radioCircleSelected {
+  border-color: #302fbc;
+}
+
+.radioDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #302fbc;
+  animation: dotPop 0.2s ease;
+}
+
+@keyframes dotPop {
+  from { transform: scale(0); }
+  to   { transform: scale(1); }
+}
+
+/* Hidden native radio */
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* ─── Error message ─── */
+.errorMsg {
+  font-size: 0.82rem;
+  color: #e03e3e;
+  margin-bottom: 0.8rem;
+}
+
+/* ─── Submit Button ─── */
+.submitBtn {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  background: transparent;
+  border: 1.5px solid #0c0c30;
+  color: #0c0c30;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #0c0c30;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ─── Spinner ─── */
+.spinnerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Success State ─── */
+.successWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.successIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(48, 47, 188, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.successText {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* ─── Right / Image Side ─── */
+.imageSide {
+  width: 300px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  background: #1a1a2e;
+}
+
+.blobImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Dark gradient scrim at bottom for badge legibility */
+.imageSide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 55%,
+    rgba(12, 12, 48, 0.65) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.imageBadge {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 100px;
+  padding: 0.45rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #302fbc;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 20px rgba(12, 12, 48, 0.25);
+  z-index: 2;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 700px) {
+  .modal {
+    flex-direction: column;
+    max-width: 420px;
+    min-height: unset;
+    border-radius: 16px;
+  }
+
+  .imageSide {
+    width: 100%;
+    height: 220px;
+    order: -1;
+    border-radius: 0;
+  }
+
+  .imageBadge {
+    bottom: 12px;
+    font-size: 0.7rem;
+  }
+
+  .formSide {
+    padding: 2rem 1.8rem 2.5rem;
+  }
+
+  .heading {
+    font-size: 1.45rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+}
