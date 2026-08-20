@@ -115,7 +115,7 @@ export default function SourcingSection() {
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                       <circle cx="12" cy="10" r="3" />
                     </svg>
-                    Boston, US
+                    Bengaluru, India
                   </span>
                   <span className={styles.metaTag}>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.metaIcon}>
@@ -129,7 +129,7 @@ export default function SourcingSection() {
                       <line x1="12" y1="1" x2="12" y2="23" />
                       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                     </svg>
-                    $159,000 – $246,500
+                    ₹12,00,000 – ₹24,00,000
                   </span>
                 </div>
 
@@ -149,8 +149,8 @@ export default function SourcingSection() {
                   <div className={styles.candidateLeft}>
                     <div className={styles.candidateAvatar} style={{ background: '#c8b8a8' }} />
                     <div>
-                      <p className={styles.candidateName}>Lydia Watson</p>
-                      <p className={styles.candidateRole}>Software Engineer at Pulid · Boston, USA</p>
+                      <p className={styles.candidateName}>Aarav Patel</p>
+                      <p className={styles.candidateRole}>Software Engineer at Pulid · Bengaluru, India</p>
                       <div className={styles.candidateTags}>
                         <span className={styles.tagGreen}>✦ Excellent match</span>
                         <span className={styles.tagBlue}>
@@ -161,7 +161,7 @@ export default function SourcingSection() {
                         </span>
                       </div>
                       <p className={styles.candidateDesc}>
-                        Created ML infrastructure at Pulid, transaction processing over $100B per year, led a team of 30 engineers,
+                        Created ML infrastructure at Pulid, transaction processing over ₹8,00,000 Cr per year, led a team of 30 engineers,
                         extensive experience with compliance, financial security and distributed systems.
                         Exceeds financial systems scaling requirements.
                       </p>
@@ -181,8 +181,8 @@ export default function SourcingSection() {
                   <div className={styles.candidateLeft}>
                     <div className={styles.candidateAvatar} style={{ background: '#b8c8d8' }} />
                     <div>
-                      <p className={styles.candidateName}>Peter Samson</p>
-                      <p className={styles.candidateRole}>Chief Technical Officer at Meta · New York, USA</p>
+                      <p className={styles.candidateName}>Rohan Sharma</p>
+                      <p className={styles.candidateRole}>Chief Technical Officer at Infosys · Mumbai, India</p>
                       <div className={styles.candidateTags}>
                         <span className={styles.tagGreen}>✦ Excellent match</span>
                         <span className={styles.tagBlue}>
@@ -193,8 +193,8 @@ export default function SourcingSection() {
                         </span>
                       </div>
                       <p className={styles.candidateDesc}>
-                        We think Peter is likely to move since he has been at Meta for almost 2 years, following the recent team
-                        restructuring in their AI division. Peter has specialized backend infrastructure experience that hasn&apos;t been
+                        We think Rohan is likely to move since he has been at Infosys for almost 2 years, following the recent team
+                        restructuring in their AI division. Rohan has specialized backend infrastructure experience that hasn&apos;t been
                         fully utilized in his current role.
                       </p>
                       <div className={styles.weakness}>

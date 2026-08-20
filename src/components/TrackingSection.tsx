@@ -126,7 +126,7 @@ export default function TrackingSection() {
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                       <circle cx="12" cy="10" r="3" />
                     </svg>
-                    Boston, US
+                    Mumbai, India
                   </span>
                   <span className={styles.metaTag}>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.metaIcon}>
@@ -140,7 +140,7 @@ export default function TrackingSection() {
                       <line x1="12" y1="1" x2="12" y2="23" />
                       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                     </svg>
-                    $159,000 – $246,500
+                    ₹13,00,000 – ₹25,00,000
                   </span>
                 </div>
 
@@ -168,8 +168,8 @@ export default function TrackingSection() {
                     </div>
                     <div className={styles.kanbanCardList}>
                       <div className={styles.kanbanCard}>
-                        <span className={styles.kanbanCardName}>David Kim</span>
-                        <span className={styles.kanbanCardRole}>Software Engineer at Google</span>
+                        <span className={styles.kanbanCardName}>Amit Verma</span>
+                        <span className={styles.kanbanCardRole}>Software Engineer at TCS</span>
                         <div className={styles.kanbanCardTags}>
                           <span className={styles.tagBlue}>Pro</span>
                         </div>
@@ -179,8 +179,8 @@ export default function TrackingSection() {
                         </div>
                       </div>
                       <div className={styles.kanbanCard}>
-                        <span className={styles.kanbanCardName}>Lucia Vance</span>
-                        <span className={styles.kanbanCardRole}>ML Specialist at Meta</span>
+                        <span className={styles.kanbanCardName}>Priya Mehta</span>
+                        <span className={styles.kanbanCardRole}>ML Specialist at Wipro</span>
                         <div className={styles.kanbanCardTags}>
                           <span className={styles.tagAmber}>Hot</span>
                         </div>
@@ -200,7 +200,7 @@ export default function TrackingSection() {
                     </div>
                     <div className={styles.kanbanCardList}>
                       <div className={styles.kanbanCard}>
-                        <span className={styles.kanbanCardName}>Elena Rostova</span>
+                        <span className={styles.kanbanCardName}>Neha Gupta</span>
                         <span className={styles.kanbanCardRole}>Senior Product Designer</span>
                         <div className={styles.kanbanCardTags}>
                           <span className={styles.tagGreen}>Top Match</span>
@@ -221,7 +221,7 @@ export default function TrackingSection() {
                     </div>
                     <div className={styles.kanbanCardList}>
                       <div className={styles.kanbanCard}>
-                        <span className={styles.kanbanCardName}>Marcus Vance</span>
+                        <span className={styles.kanbanCardName}>Vikram Nair</span>
                         <span className={styles.kanbanCardRole}>Engineering Manager</span>
                         <div className={styles.kanbanCardTags}>
                           <span className={styles.tagPurple}>Moving</span>
@@ -242,7 +242,7 @@ export default function TrackingSection() {
                     </div>
                     <div className={styles.kanbanCardList}>
                       <div className={styles.kanbanCard}>
-                        <span className={styles.kanbanCardName}>Sophia Chen</span>
+                        <span className={styles.kanbanCardName}>Anjali Singh</span>
                         <span className={styles.kanbanCardRole}>Lead Data Scientist</span>
                         <div className={styles.kanbanCardTags}>
                           <span className={styles.tagGreen}>Offer Sent</span>
