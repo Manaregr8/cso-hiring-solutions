@@ -44,7 +44,7 @@ export default function SourceSection() {
           <div className={styles.right}>
             <div className={styles.imageCard}>
               {/* Grey placeholder — swap with <Image> when ready */}
-              <img src="/wone pics/wBJk7LNXvTESOO4yMsT90pxUM.avif" alt="Product screenshot" className={styles.image} />
+              <img src="/images/image5.jpeg" alt="Product screenshot" className={styles.image} />
 
               {/* Floating badge */}
               <div className={styles.badge}>

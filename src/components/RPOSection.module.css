@@ -1,0 +1,185 @@
+.wrapper {
+  background: white;
+  padding: 3rem 2rem 5rem;
+}
+
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #F4F3ED;
+  border-radius: 2.5rem;
+  padding: 4rem 4.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.headline {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #0c0c30;
+  margin-bottom: 1.5rem;
+}
+
+.para {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #3a3a3a;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 1.8rem;
+  font-size: 0.95rem;
+  color: #3a3a3a;
+  line-height: 1.5;
+}
+
+.bulletList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #302fbc;
+}
+
+.processCard {
+  background: white;
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0,0,0,0.06);
+  width: 100%;
+}
+
+.processTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0c0c30;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.stepWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.stepBox {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: #eef0ff;
+  color: #302fbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.stepWrapper:hover .stepBox {
+  background: #302fbc;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(48, 47, 188, 0.2);
+}
+
+.stepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stepName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0c0c30;
+}
+
+.stepDesc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.connector {
+  position: absolute;
+  left: 27.5px;
+  top: 55px;
+  height: 1.75rem;
+  width: 2px;
+  background-image: linear-gradient(to bottom, #dcdcf2 50%, transparent 50%);
+  background-size: 2px 8px;
+  background-repeat: repeat-y;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connector svg {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .card {
+    padding: 3rem 2.5rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+  .card {
+    padding: 1.5rem 1rem;
+    border-radius: 1.25rem;
+  }
+  .headline {
+    font-size: 1.85rem;
+  }
+  .processCard {
+    padding: 2.5rem 1.5rem;
+  }
+}

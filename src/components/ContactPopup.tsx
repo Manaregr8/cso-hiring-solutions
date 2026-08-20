@@ -218,8 +218,8 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
         {/* ── Right: Full-cover Image ── */}
         <div className={styles.imageSide}>
           <img
-            src="/wone pics/Jjj802l1XItdAJpCXoQW54TS7FM.avif"
-            alt="Team collaboration"
+            src="/images/image1.jpeg"
+            alt="Consultant"
             className={styles.blobImg}
           />
           <div className={styles.imageBadge}>

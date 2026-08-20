@@ -14,6 +14,10 @@ import Footer from '@/components/Footer';
 import ScrollAnimationWrapper from '@/components/ScrollAnimationWrapper';
 import Loader from '@/components/Loader';
 import ContactPopup from '@/components/ContactPopup';
+import ScaleSection from '@/components/ScaleSection';
+import HiringModelsSection from '@/components/HiringModelsSection';
+import LocationsSection from '@/components/LocationsSection';
+import RPOSection from '@/components/RPOSection';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -41,6 +45,10 @@ export default function Home() {
             </ScrollAnimationWrapper>
           </section>
 
+          <ScrollAnimationWrapper>
+            <ScaleSection />
+          </ScrollAnimationWrapper>
+
           <section id="sourcing">
             <ScrollAnimationWrapper>
               <SourceSection />
@@ -66,6 +74,15 @@ export default function Home() {
               <ProductSection />
             </ScrollAnimationWrapper>
           </section>
+          <ScrollAnimationWrapper>
+            <RPOSection />
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper>
+            <HiringModelsSection />
+          </ScrollAnimationWrapper>
+          <ScrollAnimationWrapper>
+            <LocationsSection />
+          </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <FounderLetter />
           </ScrollAnimationWrapper>

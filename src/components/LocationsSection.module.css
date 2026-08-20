@@ -1,0 +1,126 @@
+.wrapper {
+  background: white;
+  padding: 3rem 2rem 5rem;
+}
+
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #F4F3ED;
+  border-radius: 2.5rem;
+  padding: 4rem 4.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 4rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(48, 47, 188, 0.1);
+  color: #302fbc;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.headline {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #0c0c30;
+  margin-bottom: 1.5rem;
+}
+
+.para {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #3a3a3a;
+  font-weight: 400;
+}
+
+.citiesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.cityCard {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: default;
+  min-width: 200px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.pinIcon {
+  color: #302fbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef0ff;
+  padding: 0.8rem;
+  border-radius: 12px;
+}
+
+.cityName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0c0c30;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .card {
+    padding: 3rem 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+  .card {
+    padding: 1.5rem 1rem;
+    border-radius: 1.25rem;
+  }
+  .headline {
+    font-size: 1.85rem;
+  }
+  .citiesGrid {
+    gap: 1rem;
+  }
+  .cityCard {
+    width: calc(50% - 0.5rem);
+    min-width: unset;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cityCard {
+    width: 100%;
+  }
+}

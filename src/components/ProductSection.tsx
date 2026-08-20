@@ -53,7 +53,7 @@ export default function ProductSection() {
 
         <div className={styles.imageWrapper}>
           <Image
-            src="/team.png"
+            src="/images/image1.jpeg"
             alt="CSO Team"
             fill
             className={styles.image}
