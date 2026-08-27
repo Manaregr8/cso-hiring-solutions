@@ -20,9 +20,6 @@ export default function ProductSection() {
             <img src="./wone pics/image2.png" alt="WNS" style={{ padding: '6px' }} />
           </div>
           <div className={styles.logo}>
-            <img src="./wone pics/image3.png" alt="QNU" />
-          </div>
-          <div className={styles.logo}>
             <img src="./wone pics/image4.png" alt="Social" />
           </div>
           <div className={styles.logo}>
@@ -35,9 +32,6 @@ export default function ProductSection() {
             <img src="./brands raw/images (2).jpg" alt="Brand" />
           </div>
           <div className={styles.logo}>
-            <img src="./brands raw/images (1).jpg" alt="Brand" />
-          </div>
-          <div className={styles.logo}>
             <img src="./brands raw/images.png" alt="Brand" />
           </div>
           <div className={styles.logo}>
@@ -48,6 +42,24 @@ export default function ProductSection() {
           </div>
           <div className={styles.logo}>
             <img src="./brands raw/PwC_logo_rgb_colour_pos.png" alt="PwC" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/goodrej.svg" alt="Godrej" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/asianpaints.svg" alt="Asian Paints" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/lenskart.svg" alt="Lenskart" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/zomato.svg" alt="Zomato" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/virgo.svg" alt="Virgo" />
+          </div>
+          <div className={styles.logo}>
+            <img src="./brands raw/maruti suzuki.svg" alt="Maruti Suzuki" />
           </div>
         </div>
 
